@@ -1,0 +1,75 @@
+.cards
+    position: relative
+    margin-top: 50px
+    display: flex
+    justify-content: space-between
+    &_item
+        position: relative
+        width: 250px
+        height: 385px
+        border: 1px solid #FFC800
+        border-radius: 15px
+        background-color: #F8F6F0
+        &_title
+            margin-top: 23px
+            font-weight: 600
+            font-size: 20px 
+            text-align: center
+            color: #3A3A3A
+        &_delimiter
+            width: 200px
+            margin: 10px auto 30px
+            border: 2px solid #FFC800
+            &_green
+                border: 2px solid #24B233
+            &_red
+                border: 2px solid #F64F44
+            &_blue
+                border: 2px solid #49CCF9
+        &_price
+            font-weight: 500
+            font-size: 65px
+            text-align: center
+            text-transform: uppercase
+            color: #3A3A3A
+        &_list
+            list-style-type: none
+            margin-top: 8px
+            li
+                display: block
+                position: relative 
+                left: 20px
+                font-seze: 15px
+                font-weight: 300
+                line-height: 15px
+                margin-bottom: 10px
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    left: -30px
+                    top: 1px
+                    width: 15px
+                    height: 10px
+                    background: url('../icons/mark.svg') center center / cover no-repeat
+        &_wrapper
+            position: absolute
+            margin: 0 auto
+            width: 100%
+            bottom: 20px
+        &_number
+            font-weight: 400
+            text-align: center
+        &_descr
+            font-weight: 300
+            text-align: center
+    &_item_green
+        border: 1px solid #24B233
+        background-color: #F3F7F3
+    &_item_red
+        background: #F8F5F4;
+        border: 1px solid #F64F44
+    &_item_blue
+        background: #F4F7F8;
+        border: 1px solid #49CCF9;
+
