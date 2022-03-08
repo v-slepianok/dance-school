@@ -7,6 +7,7 @@
     <title>Infinity_school</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
         <div class="container">
             <div class="header">
                 <a href="#" class="header_logo">
-                    <img src="img/logo.png" alt="logo" width="200" height="40">
+                    <img src="icons/logo1.svg" alt="logo" width="200" height="40">
                 </a>
                 <ul class="nav">
                     <li class="nav_item">
@@ -42,7 +43,7 @@
                 <div class="promo_title">INFINIFY STUDIO</div>
                 <div class="promo_text">Твои возможности безграничны, а мечты реальны!</div>
                 <div class="promo_text">Начни действовать прямо сейчас!</div>
-                <button class="promo_btn">Записаться</button>
+                <button class="button button_main">Записаться</button>
                 <div class="promo_social">
                     <div class="promo_social_icon">
                         <img src="icons/social-icons/inst.svg" alt="instagramm">
@@ -68,15 +69,15 @@
             <div class="title">Преимущества</div>
                 <div class="row">
                     <div class="col">
-                        <img src="icons/benefits/yoga.svg" alt="2" class="benefits_img">
+                        <img src="icons/benefits/yoga.svg" alt="benefit" class="benefits_img">
                         <div class="benefits_descr">Уроки в просторных залах <br> и на свежем воздухе </div>
                     </div>
                     <div class="col">
-                        <img src="icons//benefits/palm-tree.svg" alt="2" class="benefits_img">
+                        <img src="icons//benefits/palm-tree.svg" alt="benefit" class="benefits_img">
                         <div class="benefits_descr">5 направлений которые подойдут <br> всем, независимо от уровня <br> подготовки и возраста </div>
                     </div>
                     <div class="col">
-                        <img src="icons/benefits/lotus.svg" alt="2" class="benefits_img">
+                        <img src="icons/benefits/lotus.svg" alt="benefit" class="benefits_img">
                         <div class="benefits_descr">Професиональный  тренер <br> с опытом более 5 лет</div>
                     </div>
                 </div>
@@ -85,7 +86,7 @@
     </section>
     <section class="about_us">
         <div class="container">
-            <div class="title title_white"> О нас</div>
+            <div class="title title_blue"> О нас</div>
             <div class="about_us_info">
                 <img src="img/about-us.png" alt="2" class="about_us_img"/>
                 <div class="about_us_descr">Мы проводим обучение как опытных танцоров так и начинающих танцоров с учетом современных тенденций.<br><br>
@@ -97,9 +98,39 @@
             </div>
         </div>
     </section>
+    <div class="directions">
+        <div class="container">
+            <div class="title">Направления</div>
+            <div class="slider">
+                <div>
+                    <img src="img/directions/slide_1.png" class="slide" alt="pole-dance">
+                    <div class="slide_descr">pole-dance</div>
+                </div>
+                <div>
+                    <img src="img/directions/slide_2.png" class="slide" alt="stretching">
+                    <div class="slide_descr">stretching</div>
+                </div>
+                <div>
+                    <img src="img/directions/slide_3.png" class="slide" alt="exotic">
+                    <div class="slide_descr">exotic</div>
+                </div>
+                <div>
+                    <img src="img/directions/slide_4.jpg" class="slide" alt="personal training">
+                    <div class="slide_descr">personal training</div>
+                </div>
+                <div>
+                    <img src="img/directions/slide_5.jpg" class="slide" alt="glutes marathon">
+                    <div class="slide_descr">glutes  marathon</div>
+                </div>
+              </div>
+              <button class="prev"><img src="icons/left.svg" alt=""></button>
+              <button class="next"><img src="icons/right.svg" alt=""></button>
+        </div>
+    </div>
     <section class="tariffs">
         <div class="container">
             <div class="title">Тарифы</div>
+
             <div class="cards">
                 <div class="cards_item  cards_item_yellow">
                     <div class="cards_item_title">Базовый</div>
@@ -161,9 +192,9 @@
                 </div>
             </div>
             <div class="tariffs_one-time_workout">Разовая тренировка на свежем воздуже - 10 <br>€ Разовая тренировка в зале - 18 €</div>
-
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
