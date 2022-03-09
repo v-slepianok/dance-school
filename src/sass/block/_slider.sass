@@ -3,23 +3,29 @@
 .slide
     position: relative
     border-radius: 15px
+    width: 30%
+    z-index: 1
+.slide_img
     height: 450px
     width: 330px
-    z-index: 1
 .slide_descr
-    border-radius: 15px
+    background-color: rgba(143, 177, 193, 0.2)
+    border: 1px solid #FAFAFA
     position: absolute
-    padding: 50px  
-    width: 270px
+    padding: 25px 5px  
+    height: 82px
+    width: 70%
     text-align: center
-    bottom: 40%
+    bottom: 44%
     z-index: 2
     color: #FAFAFA
     margin-left: 50%
     transform: translateX(-50%)
-    font-size: 20px
-    font-weight: 600
-    background-color: #00000060
+    font-size: 19px
+    font-weight: 300
+
+
+
 
 .prev, .next
     position: absolute
@@ -40,6 +46,24 @@
         position: relative
         display: block
         margin: 0 auto
+
+
+// .tns-slide-active
+//     padding-top: 25px
+// .tns-slide-active > img
+//     height: 400px
+
+// .tns-slide-active ~ .tns-slide-active
+//     padding: 0
+// .tns-slide-active ~ .tns-slide-active > img
+//     height: 450px
+//     transition-duration: 0.2s
+
+// .tns-slide-active ~ .tns-slide-active ~ .tns-slide-active
+//     padding-top: 25px
+// .tns-slide-active ~ .tns-slide-active ~ .tns-slide-active > img
+//     height: 400px
+
 .tns-nav
     margin-top: 40px
     display: flex
