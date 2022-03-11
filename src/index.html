@@ -9,13 +9,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.css">
 </head>
 <body>
     <section class="promo">
         <div class="container">
             <div class="header">
                 <a href="#" class="header_logo">
-                    <img src="icons/logo.svg" alt="logo" width="200" height="40">
+                    <img src="icons/logo.svg" alt="logo" class="header_logo">
                 </a>
                 <ul class="nav">
                     <li class="nav_item">
@@ -37,13 +39,18 @@
                         <a class="nav_link" href="#">Контакты</a>
                     </li>
                 </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
             <div class="promo_wrapper">
                 <div class="promo_title_small">Студия танцев в Лимассоле</div>
                 <div class="promo_title">INFINIFY STUDIO</div>
                 <div class="promo_text">Твои возможности безграничны, а мечты реальны!</div>
                 <div class="promo_text">Начни действовать прямо сейчас!</div>
-                <button class="button button_main">Записаться</button>
+                <a href="#questions"><button class="button button_main">Записаться</button></a>
                 <div class="social">
                     <div class="social_icon">
                         <img src="icons/social-icons/inst.svg" alt="instagramm">
@@ -65,15 +72,15 @@
         <div class="container">
             <div class="title">Преимущества</div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-md-4">
                         <img src="icons/benefits/yoga.svg" alt="benefit" class="benefits_img">
                         <div class="benefits_descr">Уроки в просторных залах <br> и на свежем воздухе </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                         <img src="icons//benefits/palm-tree.svg" alt="benefit" class="benefits_img">
                         <div class="benefits_descr">5 направлений которые подойдут <br> всем, независимо от уровня <br> подготовки и возраста </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                         <img src="icons/benefits/lotus.svg" alt="benefit" class="benefits_img">
                         <div class="benefits_descr">Професиональный  тренер <br> с опытом более 5 лет</div>
                     </div>
@@ -86,10 +93,13 @@
             <div class="title title_blue"> О нас</div>
             <div class="about_us_info">
                 <img src="img/about-us.png" alt="2" class="about_us_img"/>
-                <div class="about_us_descr">Мы проводим обучение как опытных танцоров так и начинающих танцоров с учетом современных тенденций.<br><br>
+                <div id="aboutus-description-full" class="about_us_descr">Мы проводим обучение как опытных танцоров так и начинающих танцоров с учетом современных тенденций.<br><br>
                     Наши тренеры постоянно проходят курсы и мастер классы у лучших представителей в своей сферы по классам Exotic, Pole Dance, Stretching и т. д.<br><br>
                     Самое важное для нас - это профессионализм и индивидуальный подход к клиенту.<br><br>
-                    Всё что вам нужно для занятий - это хорошее настроение и любовь к танцaм.</div>
+                    Всё что вам нужно для занятий - это хорошее настроение и любовь к танцaм.
+                </div>
+                <div id="aboutus-description-mobile" class="about_us_descr_mobile">Мы проводим обучение как опытных танцоров так и начинающих танцоров с учетом современных тенденций.<br><br>
+                    <a id="read_more" class="read_more"> Читать больше...</a>
                 </div>
             </div>
             </div>
@@ -159,10 +169,10 @@
                     </div>
                 </div>
             </div>
-            <div class="tariffs_one-time_workout">Разовая тренировка на свежем воздуже - 10 <br>€ Разовая тренировка в зале - 18 €</div>
+            <div class="tariffs_one-time_workout">Разовая тренировка на свежем воздуже - 10€  <br>Разовая тренировка в зале - 18 €</div>
         </div>
     </section>
-    <div class="directions">
+    <section class="directions">
         <div class="container">
             <div class="title">Направления</div>
             <div class="slider">
@@ -190,12 +200,19 @@
               <button class="prev"><img src="icons/left.svg" alt=""></button>
               <button class="next"><img src="icons/right.svg" alt=""></button>
         </div>
-    </div>
-    <section class="questions">
+    </section> 
+    <!-- <section class="online_entry">
+        <div class="container">
+            <div class="title">Расписание</div>
+            <div class="entery_img"><img src="img/calendar.png"  width="1000px" height="500px"alt=""></div>
+            <!-- <div id='calendar'></div> -->
+        <!-- </div>
+    </section> --> 
+    <section class="questions" id="questions">
         <div class="container">
             <div class="title">Остались вопросы?</div>
             <div class="questions_info">
-                <img src="img/questions.jpg"  width="600px" height="430px" alt="contacts">
+                <img src="img/questions.jpg" class="questions_img" alt="contacts">
                 <form class="form_fill">
                     <div class="consultation">Здесь ты можешь записаться на занятие или задать вопрос</div>
                     <input name="name" placeholder="Ваше имя" type="text"/>
