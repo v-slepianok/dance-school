@@ -43,14 +43,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 
   menuItem = document.querySelectorAll('.nav_item'),
-  menuItem.forEach(item => {
-    console.log('items loop');
-    item.addEventListener('click', () => {
-      console.log('Item click');
-      hamburger.classList.toggle('hamburger_active');
-      menu.classList.toggle('nav_active');
+    menuItem.forEach(item => {
+      console.log('items loop');
+      item.addEventListener('click', () => {
+        console.log('Item click');
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('nav_active');
+      })
     })
-  })
 
   // btn read more
   const readMoreBtn = document.getElementById('read_more');
@@ -62,4 +62,41 @@ document.addEventListener("DOMContentLoaded", function (event) {
     textMobile.style.display = 'none';
   });
 
+  const form = document.querySelector('#contact-form');
+  const modal = document.querySelector('.modal');
+  const closeBtn = document.querySelector('.modal_close');
+
+  const closeModal = () => {
+    modal.style.display = 'none';
+  };
+  closeBtn.addEventListener('click', closeModal);
+  
+  const formSubmit = async (event) => {
+    const data = new URLSearchParams();
+    for (const pair of new FormData(form)) {
+      data.append(pair[0], pair[1]);
+    }
+
+    event.preventDefault();
+
+    await fetch('https://docs.google.com/forms/d/e/1FAIpQLSdCJqCOpaZf4aa8laI1hz-VfpD0RukmGMcD5wd8hSRMS1J9_g/formResponse', {
+      method: 'POST',
+      body: data,
+      mode: 'no-cors',
+      cache: 'no-cache',
+      credentials: 'omit',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+      },
+    });
+
+    form.reset();
+    modal.style.display = 'block'; 
+
+    setTimeout(() => {
+      closeModal();
+    }, 5000);
+  }
+
+  form.addEventListener('submit', formSubmit);
 });
