@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     textMobile.style.display = 'none';
   });
 
-  //form
   const form = document.querySelector('#contact-form');
   const modal = document.querySelector('.modal');
   const closeBtn = document.querySelector('.modal_close');
