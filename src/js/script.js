@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
 
   const slider = tns({
     container: '.slider',
     items: 3,
     slideBy: 1,
-   autoplay: true, 
+    autoplay: true,
     autoplayTimeout: 1800,
     controls: false,
     navPosition: 'bottom',
@@ -23,34 +23,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
     }
   });
-  
+
   document.querySelector('.prev').addEventListener('click', () => {
     slider.goTo('prev');
   });
-  
+
   document.querySelector('.next').addEventListener('click', () => {
     slider.goTo('next');
   });
 
-//hamburger menu
+  //hamburger menu
   const menu = document.querySelector('.nav'),
-    menuItem = document.querySelectorAll('.nav_item'),
     hamburger = document.querySelector('.hamburger');
 
-    hamburger.addEventListener('click', () => {
-      console.log('1');
-      hamburger.classList.toggle('hamburger_active');
-      menu.classList.toggle('nav_active');
-
-    menuItem.forEach(item => {
-      item.addEventListener('click', () => {
-      hamburger.classList.toggle('hamburger_active');
-      nav.classList.toggle('nav_active');
-      })
-    })
+  hamburger.addEventListener('click', () => {
+    console.log('Hamburger click');
+    hamburger.classList.toggle('hamburger_active');
+    menu.classList.toggle('nav_active');
   });
 
-// btn read more
+  menuItem = document.querySelectorAll('.nav_item'),
+  menuItem.forEach(item => {
+    console.log('items loop');
+    item.addEventListener('click', () => {
+      console.log('Item click');
+      hamburger.classList.toggle('hamburger_active');
+      menu.classList.toggle('nav_active');
+    })
+  })
+
+  // btn read more
   const readMoreBtn = document.getElementById('read_more');
   const textMobile = document.getElementById('aboutus-description-mobile');
   const textFull = document.getElementById('aboutus-description-full');

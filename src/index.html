@@ -93,7 +93,7 @@
                     </div>
                     <div class="col-md-4">
                         <img src="icons/benefits/lotus.svg" alt="benefit" class="benefits_img">
-                        <div class="benefits_descr">Професиональный  тренер <br> с опытом более 5 лет</div>
+                        <div class="benefits_descr">Професиональный  тренер <br> с опытом более 7 лет</div>
                     </div>
                 </div>
             </div>
@@ -215,31 +215,34 @@
     <section class="online_entry" id="online_entry" >
         <div class="container">
             <div class="title">Расписание</div>
-            <div class="entery_img"><img src="img/calendar.png"  width="1000px" height="500px"alt=""></div>
-            <!-- <div id='calendar'></div> -->
-        </div>
-    </section> 
+            <div class="online_entry_info">
+                <div class="entery_img"><img src="img/shedule/calendar_1.png" class="online_entry_img" alt="schedule"></div>
+                <div class="entery_img"><img src="img/shedule/calendar_2.png"  class="online_entry_img" alt="schedule"></div>
+            </div>
+         </div>
+    </section>  
     <section class="questions" id="questions">
         <div class="container">
             <div class="title">Остались вопросы?</div>
             <div class="questions_info">
                 <img src="img/questions.jpg" class="questions_img" alt="contacts">
-                <form class="form_fill">
+                <form  action="#"  class="form_fill">
                     <div class="consultation">Здесь ты можешь записаться на занятие или задать вопрос</div>
-                    <input name="name" placeholder="Ваше имя" type="text"/>
-                    <input name="emale" placeholder="Электронный адрес" type="text"/>
+                    <input name="name" minlength="3" maxlength="20" required placeholder="Ваше имя" type="text"/>
+                    <input name="email" minlength="10" maxlength="30" required placeholder="Электронный адрес" type="text"/>
                     <textarea class="textarea" placeholder="Комментарий" id="floatingTextarea2"></textarea>
                     <button class=" button button_submit">отправить</button>
                 </form>
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="footer_wrapper" id="contacts">
-                <div class="footer_mobile">
-                    <a href="tel:+35799276801" class="phone">Tel: +357 99 27 68 01</a>
-                </div>
+    <footer class="footer" id="contacts">
+        <div class="footer_info">
+            <div class="footer_block">
+                <div class="footer_title">Контакты</div>
+                <address class="footer_addr">Aisopou 4, Limassol</address>
+                <a href="tel:+35799276801" class="footer_phone">Tel: +357 99 27 68 01</a>
+                <a href="mailto:Perfectbody.cyprus@gmail.com" class="footer_emale">E-mail: infinity@gmail.com</a>
                 <div class="social social_black">
                     <div class="social_icon">
                         <a href="https://instagram.com/pole_stretch_limassol?utm_medium=copy_link">
@@ -262,11 +265,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="footer_mail">
-                    <a href="mailto:Perfectbody.cyprus@gmail.com">E-mail: infinity@gmail.com</a>
-                </div>
             </div>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4166.098663996673!2d33.054881262750186!3d34.6934588672956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e73369e7cb5b4f%3A0x153fcaae4c211464!2zQWlzb3BvdSA0LCBMaW1hc3NvbCwg0JrQuNC_0YA!5e0!3m2!1sru!2s!4v1647940782367!5m2!1sru!2s" width="60%" height="330" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/script.js"></script>
