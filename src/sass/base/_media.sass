@@ -1,0 +1,276 @@
+@media (max-width: 1200px)
+    .promo
+        padding: 35px
+    .nav
+        &_item
+            margin-left: 20px
+    .benefits
+        padding: 35px
+        &_img
+            margin-top: 60px
+        &_descr
+            font-size: 18px
+    .about_us
+        padding: 35px 10px 
+        &_descr
+            line-height: 27px
+            margin: 35px
+            &_mobile
+                display: none
+    .tariffs
+        padding: 35px 0
+        &_one-time_workout
+            margin-top: 40px
+    .cards
+        margin-top: 40px
+        &_item
+            width: 24%
+    .directions
+        padding: 35px
+    .prev
+        left: -50px
+    .next
+        right: -50px
+    .slider
+        margin-top: 40px
+    .slide_img
+        height: 420px
+        width: 285px
+    .online_entry_img
+        width: 430px
+    .questions
+        padding: 35px 20px
+        &_img
+            width: 520px
+            height: 400px
+
+@media (max-width: 991px)
+    .promo
+        background: url('../img/promo_bg.png') right 25% (center/cover) no-repeat 
+        &_wrapper
+            top: 140px
+        &_title
+            font-size: 55px
+    .header
+        z-index: 1
+    .nav
+        position: fixed
+        padding: 30px 15px
+        flex-direction: column
+        justify-content: start
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        background-color: #fff
+        transition: 0.6s all
+        z-index: 2
+        &_active
+            left: 0
+        &_item
+            margin: 20px 0
+        &_link
+            color: #f1b3b5
+            font-size: 25px
+    .hamburger
+        display: block
+        position: absolute
+        right: 20px
+        transform: translateX(-50%)
+        width: 36px
+        height: 30px
+        span
+            display: block
+            height: 3px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 5px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform:  rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform:  rotate(45deg)
+    .benefits
+        &_descr
+            font-size: 15px
+    .title
+        font-size: 30px
+    .tariffs
+        &_one-time_workout
+            margin-top: 20px
+    .about_us
+        &_descr
+            margin: 20px
+            font-size: 19px
+            &_mobile
+                display: none
+        &_img
+            margin: 20px
+    .cards
+        margin-top: 25px
+        justify-content: center
+        flex-wrap: wrap
+        &_item
+            width: 270px
+            margin: 25px
+    .slide_descr
+        font-size: 16px
+    .online_entry_info
+        flex-direction: column
+        align-items: center
+    .online_entry_img
+        display: block
+        width: 470px
+    .questions
+        padding: 35px
+        &_info
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &_img
+            width: 600px
+            height: 350px
+    .form_fill
+        width: 65%
+    .consultation
+        margin: 25px 0
+    .footer_info
+        justify-content: center
+    .footer_block
+        width: 100%
+
+    //575
+@media (max-width: 767px)
+    .promo
+        background: url('../img/promo_bg.png') right 20% (center/cover) no-repeat 
+    .button_main
+        background: #fff
+        color: #EEA1A7
+    .nav
+        width: 70%
+    .benefits
+        &_img
+            margin-top: 40px
+        &_descr
+            font-size: 18px
+    .about_us_info
+        flex-direction: column
+    .cards
+        margin-top: 10px
+        &_item
+            width: 250px
+    .slide_descr
+        width: 45%
+        font-size: 15px
+    .questions
+        &_img
+            width: 90%
+    .footer
+        &_wrapper
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin-bottom: 5px
+        &_mobile
+            margin-top: 8px
+        &_mail
+            margin-top: 8px
+    .form_fill
+        height: 400px
+        width: 70%
+    .social_black
+        order: 1
+        margin-top: 15px
+
+@media (max-width: 575px)
+    .header 
+        &_logo
+            width: 110px
+            height: 60px
+    .nav
+        width: 70%
+    .hamburger
+        right: 2px
+        bottom: 10px
+    .promo
+        min-height: 550px
+        // background: url('../img/promo_bg.png') right 20% (center/cover) no-repeat 
+        background: url('../img/mobile_bg.png') center (center/cover) no-repeat 
+        padding: 20px 
+        &_text
+            font-size: 17px
+            text-align: center
+        &_wrapper
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            top: 150px
+        &_title
+            font-size: 30px
+            line-height: 40px
+            font-weight: 400
+    .button_main
+        margin-top: 90px
+        width: 170px
+        height: 40px
+    .social
+        width: 200px
+        margin-top: 20px
+    .title
+        font-size: 25px
+    .slide_descr
+        width: 60%
+        font-size: 13px
+    .about_us
+        padding: 35px 15px
+        &_img
+            width: 250px
+            height: 250px
+        &_descr
+            display: none
+            &_mobile
+                display: block
+    .tariffs
+        &_one-time_workout
+            margin-top: 15px
+            font-size: 13px
+    .online_entry_img
+        width: 290px
+    .questions_img
+        width: 100%
+        height: 40%
+    .form_fill
+        width: 300px
+        height: 370px
+        .consultation
+            margin: 15px 0
+            font-size: 17px
+    .questions_info
+        margin-top: 20px
+    .button_submit
+        margin: 25px auto
+        height: 50px
+    .footer
+        display: flex
+        flex-direction: column
+        &_title
+            margin-bottom: 15px
+        &_emale
+            margin-bottom: 10px
+        &_info
+            width: 100%
+            padding: 20px 15px
+        &_block
+            width: 100%
+    .social_black
+        margin-top: 5px
+    iframe
+        width: 100%
+
