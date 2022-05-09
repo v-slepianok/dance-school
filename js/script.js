@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   };
   closeBtn.addEventListener('click', closeModal);
   
+  
   const formSubmit = async (event) => {
     const data = new URLSearchParams();
     for (const pair of new FormData(form)) {
